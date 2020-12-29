@@ -1,0 +1,1 @@
+export { greeterRouter } from "./greeter-router";

@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.vs": true,
+        "**/node_modules": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // streetsidesoftware.code-spell-checker settings
+    "cSpell.words": [
+        "eqeqeq",
+        "mocharc",
+        "prestart"
+    ],
+    // maty.vscode-mocha-sidebar settings
+    "mocha.files.glob": "test/**/*.test.ts",
+    "mocha.requires": [
+        "ts-node/register",
+        "module-alias/register"
+    ]
+}
