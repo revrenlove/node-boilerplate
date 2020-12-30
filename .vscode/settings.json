@@ -11,9 +11,11 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     // streetsidesoftware.code-spell-checker settings
     "cSpell.words": [
+        "Inversify",
         "eqeqeq",
         "mocharc",
-        "prestart"
+        "prestart",
+        "transpiled"
     ],
     // maty.vscode-mocha-sidebar settings
     "mocha.files.glob": "test/**/*.test.ts",
