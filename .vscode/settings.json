@@ -22,5 +22,6 @@
     "mocha.requires": [
         "ts-node/register",
         "module-alias/register"
-    ]
+    ],
+    "debug.javascript.usePreview": false
 }
