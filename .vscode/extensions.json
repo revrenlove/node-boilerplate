@@ -3,6 +3,7 @@
         "dbaeumer.vscode-eslint",
         "christian-kohler.path-intellisense",
         "ms-vscode.vscode-typescript-tslint-plugin",
-        "maty.vscode-mocha-sidebar"
+        "maty.vscode-mocha-sidebar",
+        "streetsidesoftware.code-spell-checker"
     ]
 }

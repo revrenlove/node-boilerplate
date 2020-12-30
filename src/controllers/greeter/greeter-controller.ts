@@ -1,6 +1,6 @@
-import { GreeterService } from "@service/greeter-service";
-import express from "express";
-import { Inject } from "typescript-ioc";
+import { GreeterService } from '@service/greeter-service';
+import express from 'express';
+import { Inject } from 'typescript-ioc';
 
 export class GreeterController {
 

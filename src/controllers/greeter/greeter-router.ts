@@ -1,6 +1,6 @@
-import express from "express";
-import { Container } from "typescript-ioc";
-import { GreeterController } from "./greeter-controller";
+import express from 'express';
+import { Container } from 'typescript-ioc';
+import { GreeterController } from './greeter-controller';
 
 const urlPath = '/greeter';
 
