@@ -2,6 +2,8 @@
 
 A boilerplate for a node web api application.
 
+**NOTE:** This boilerplate has no explicit "global" dependencies except [Node.js®](https://nodejs.org/en/)... obviously. There are a handful of opinionated recommendations. See the `package.json` and the rest of this `README` for more info.
+
 ## Development Features
 
 ### [TypeScript](https://www.typescriptlang.org/)
@@ -14,7 +16,7 @@ It helps you to make your TypeScript code consistent and allows you to enforce b
 
 ### [typescript-ioc](https://github.com/thiagobustamante/typescript-ioc)
 
-IoC container for TypeScript. Why didn't I use [InversifyJS](https://inversify.io/)? The same reason I enjoy [Royal Crown Cola](https://www.rccolainternational.com/) - It was there, and I went with it. Also, the dox for `typescript-ioc` were more straight-forward, imho.
+IoC container for TypeScript. It's simple. It seems to work.
 
 ### [module-alias](https://github.com/ilearnio/module-alias)
 
@@ -44,6 +46,8 @@ Assertion library... It works, ya know?
 
 `curl localhost:8080/api/greeter?name=Bill`
 
+- Should return: `Hello, Bill!`
+
 ## Requirements
 
 - [Node.js®](https://nodejs.org/en/)
@@ -55,23 +59,6 @@ Assertion library... It works, ya know?
 #### Windows- specific
 
 - [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-
-## Includes
-
-### Typescript
-
-In addition, it is set up with typescript-ioc
-
-## **Important**
-
-Run VSCode in WSL mode.
-
-## How-to
-
-1. `npm install`
-2. `npm build`
-3. `npm test`
-4. `npm start`
 
 ## TODO: List
 
