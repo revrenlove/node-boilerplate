@@ -1,8 +1,6 @@
 {
     "recommendations": [
         "dbaeumer.vscode-eslint",
-        "christian-kohler.path-intellisense",
-        "maty.vscode-mocha-sidebar",
-        "streetsidesoftware.code-spell-checker"
+        "maty.vscode-mocha-sidebar"
     ]
 }

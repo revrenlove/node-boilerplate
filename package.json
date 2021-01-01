@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --config ./mocharc.jsonc",
     "start": "node ./dist",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig-build.json",
     "prestart": "npm run build"
   },
   "keywords": [],

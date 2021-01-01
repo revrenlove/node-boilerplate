@@ -2,40 +2,6 @@
 
 A boilerplate for a node web api application.
 
-**NOTE:** This boilerplate has no explicit "global" dependencies except [Node.js®](https://nodejs.org/en/)... obviously. There are a handful of opinionated recommendations. See the `package.json` and the rest of this `README` for more info.
-
-## Development Features
-
-### [TypeScript](https://www.typescriptlang.org/)
-
-I mean, at this point, why wouldn't you?
-
-### [ESLint](https://eslint.org/)
-
-It helps you to make your TypeScript code consistent and allows you to enforce best practices for your code base.
-
-### [typescript-ioc](https://github.com/thiagobustamante/typescript-ioc)
-
-IoC container for TypeScript. It's simple. It seems to work.
-
-### [module-alias](https://github.com/ilearnio/module-alias)
-
-Allows your transpiled code to actually make use of the `paths` section of your `tsconfig.json` file.
-
-## Testing Features
-
-### [Mocha](https://mochajs.org/)
-
-Testing framework. Why Mocha? RC Cola.
-
-### [Chai Assertion Library](https://www.chaijs.com/)
-
-Assertion library... It works, ya know?
-
-## Config files
-
-## Recommended Extensions
-
 ## TL;DR
 
 `git clone https://github.com/revrenlove/node-boilerplate`
@@ -56,9 +22,97 @@ Assertion library... It works, ya know?
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-#### Windows- specific
+  There are included vscode specific settings included to streamline things.
+
+#### Windows-specific
 
 - [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+  Using WSL on Windows is just a smoother developer experience.
+
+## Includes
+
+- [TypeScript](https://www.typescriptlang.org/)
+
+- [ESLint](https://eslint.org/)
+
+- [typescript-ioc](https://github.com/thiagobustamante/typescript-ioc)
+
+  IoC container for typescript.
+
+- [module-alias](https://github.com/ilearnio/module-alias)
+
+  Allows your transpiled code to actually make use of the `paths` section of your `tsconfig.json` file.
+
+- [Mocha](https://mochajs.org/)
+
+  For testing.
+
+- [Chai Assertion Library](https://www.chaijs.com/)
+
+  Assertion library.
+
+## Config files
+
+### `eslintrc.json`
+
+Has all the rules/config for ESLint.
+
+### `mocharc.jsonc`
+
+Config settings for mocha when running it from the command line
+
+### `package.json`
+
+#### `_moduleAliases`
+
+Needed for `module-alias` package. Should match keys in `paths` of `tsconfig.json` as such (note the lack of wildcard in `package.json`):
+
+`package.json`
+
+```json
+{
+  // ...
+  "_moduleAliases": {
+    "@service": "dist/service"
+    // ...
+  }
+  // ...
+}
+```
+
+`tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    // ...
+    "paths": {
+      "@service/*": ["./src/service"]
+      // ...
+    }
+    // ...
+  }
+}
+```
+
+### `tsconfig.json`
+
+`include` key is for including any source files that you want VSCode to recognize.
+
+#### `tsconfig-build.json`
+
+Used only for build to exclude the `test` folder in compilation.
+
+## Recommended Extensions
+
+### [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+Code linter for TypeScript and JavaScript
+
+### [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar)
+
+Sidebar test runner for Mocha Tests
 
 ## TODO: List
 
