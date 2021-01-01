@@ -60,9 +60,23 @@ Has all the rules/config for ESLint.
 
 ### `mocharc.jsonc`
 
-Config settings for mocha when running it from the command line
+Config settings for mocha when running it from the command line.
+
+- `ts-node/register` - for compilation.
+
+- `module-alias/register` - for path alias recognition.
 
 ### `package.json`
+
+#### `scripts`
+
+- `clean` - removes `dist` folder.
+
+- `build` - runs `clean` and builds app.
+
+- `start` - cleans, builds, and starts app.
+
+- `test` - runs `mocha` with settings in `mocharc.jsonc`.
 
 #### `_moduleAliases`
 
