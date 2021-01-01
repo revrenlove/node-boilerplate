@@ -1,6 +1,8 @@
-# Boilerplate
+# Node/Express/TypeScript Boilerplate
 
 A boilerplate for a node web api application.
+
+I built this to be a simple clone and go for developing apps utilizing node, TypeScript, ESLint, and express with baked-in unit testing and an IoC container. I found many projects that implemented some of these, many projects that had everything you needed to build a space shuttle, and many projects/tutorials that required quite a bit of configuration (that seemingly never worked.) that but nothing with these meager requirements fulfilled, where everything just worked right out of the box.
 
 ## TL;DR
 
