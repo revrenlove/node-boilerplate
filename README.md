@@ -6,6 +6,8 @@ A boilerplate for a node web api application.
 
 `git clone https://github.com/revrenlove/node-boilerplate`
 
+`cd node-boilerplate`
+
 `npm install`
 
 `npm start`
@@ -13,6 +15,14 @@ A boilerplate for a node web api application.
 `curl localhost:8080/api/greeter?name=Bill`
 
 - Should return: `Hello, Bill!`
+
+### Building
+
+`npm run build`
+
+### Testing
+
+`npm test`
 
 ## Requirements
 
