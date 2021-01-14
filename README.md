@@ -2,6 +2,14 @@
 
 A boilerplate for a node web api application. It's designed to work out-of-the-box.
 
+## Why?
+
+The JavaScript ecosystem is intimidating. There are numerous options for everything, each of which having a mountain of the write and wrong ways to use said options, and even more reasons why or why not to use said options, and yet even more still opinions on which tools to use with them. I'm all about the "lego" mentality, but at a certain point, I mean... Fuck! I don't want to have to sift through tabs and tabs of dox just to return `Hello, world` from my API.
+
+So, here's this...
+
+A boilerplate for a [Node.js®](https://nodejs.org/en/) backend api written in [TypeScript](https://www.typescriptlang.org/). It has [Mocha](https://mochajs.org/) for unit tests. If you follow the instructions, it should work out of the box for anyone... If it doesn't, please, log an issue, and it will be attended to.
+
 ## TL;DR
 
 `git clone https://github.com/revrenlove/node-boilerplate`
