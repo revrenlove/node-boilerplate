@@ -1,6 +1,6 @@
 # Boilerplate
 
-A boilerplate for a node web api application.
+A boilerplate for a node web api application. It's designed to work out-of-the-box.
 
 ## TL;DR
 
@@ -33,6 +33,8 @@ A boilerplate for a node web api application.
 - [Visual Studio Code](https://code.visualstudio.com/)
 
   There are included vscode specific settings included to streamline things.
+
+  [See Below](#visual-studio-code).
 
 #### Windows-specific
 
@@ -128,13 +130,23 @@ Needed for `module-alias` package. Should match keys in `paths` of `tsconfig.jso
 
 Used only for build to exclude the `test` folder in compilation.
 
-## Recommended Extensions
+## Visual Studio Code
 
-### [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+After cloning and prior to opening in Visual Studio Code, go ahead and run the install and build commands to prevent it barking at you.
+
+`npm install`
+
+`npm run build`
+
+Once you have the folder open in Visual Studio Code, it will prompt you to download some recommended extensions... Do that...
+
+### Recommended Extensions
+
+#### [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 Code linter for TypeScript and JavaScript
 
-### [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar)
+#### [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar)
 
 Sidebar test runner for Mocha Tests
 
